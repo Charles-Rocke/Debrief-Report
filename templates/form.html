@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Debrief Form{% endblock %}
+{% block content %}
+<div>
+   <center><h2 >Driver Debrief Report</h2></center>
+</div>
+<br>
+<center>
+   <form method="POST" action="{{url_for('report')}}">
+      <div class="mb-3" id = "driverName">
+         <label align= "left" for="exampleFormControlInput1" class="form-label">Driver Name</label>
+         <input name="driverName" type="text" class="form-control" id="exampleFormControlInput1" placeholder="full name">
+      </div>
+      <br>
+      <div class="mb-3" id = "driverName">
+         <label align="left" for="exampleFormControlInput1" class="form-label">Number of packages returned</label>
+         <input name="numReturned" type="text" class="form-control" id="exampleFormControlInput1" placeholder="number returned">
+      </div>
+      <br>
+      <div class="mb-3" id = "reason">
+         <label for="exampleFormControlTextarea1" class="form-label">Reason(s) for return</label>
+         <textarea name="reason" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+	  <div>
+		  <button class="btn" name="submit" type="submit">Submit</button>
+	  </div>
+   </form>
+</center>
+{% endblock %}

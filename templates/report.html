@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Admin Report{% endblock %}
+{% block content %}
+<div>
+  <center><h2>Admin Report</h2></center> 
+</div>
+<br>
+<ul class="list-group list-group-flush" id="notes">
+   {% for report in reportList %}
+   <li class="list-group-item">
+	   <h3>Report #{{ report.id}}</h3>
+	   <label style="font-weight: bold;">Driver Name: </label>
+	   {{ report.driverName }}
+	   <br>
+	   <label style="font-weight: bold;">Items returned: </label>
+	   {{ report.numReturned }}
+	   <br>
+	   <label style="font-weight: bold;">Reason: </label>
+	   {{ report.reason }}
+   </li>
+   {% endfor %}
+</ul>
+
+{% endblock %}
