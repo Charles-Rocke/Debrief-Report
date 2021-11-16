@@ -23,7 +23,7 @@ app.secret_key = 'secret string'
 db = SQLAlchemy(app)
 	###################################################
 	##################################################
-	# Creating a User Table
+	# Creating a User Table INGT
 	##################################################
 
 
