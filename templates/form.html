@@ -9,18 +9,23 @@
    <form method="POST" action="{{url_for('report')}}">
       <div class="mb-3" id = "driverName">
          <label align= "left" for="exampleFormControlInput1" class="form-label">Driver Name</label>
-         <input name="driverName" type="text" class="form-control" id="exampleFormControlInput1" placeholder="full name">
+         <input name="driverName" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full name">
       </div>
       <br>
       <div class="mb-3" id = "driverName">
          <label align="left" for="exampleFormControlInput1" class="form-label">Number of packages returned</label>
-         <input name="numReturned" type="text" class="form-control" id="exampleFormControlInput1" placeholder="number returned">
+         <input name="numReturned" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Number returned">
       </div>
       <br>
       <div class="mb-3" id = "reason">
          <label for="exampleFormControlTextarea1" class="form-label">Reason(s) for return</label>
          <textarea name="reason" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
+	  <div class="mb-3" id = "reason">
+        <label for="myfile">Select a file:</label>
+		<input type="file" id="myfile" name="fileImage">
+      </div>
+	  <br>
 	  <div>
 		  <button class="btn" name="submit" type="submit">Submit</button>
 	  </div>

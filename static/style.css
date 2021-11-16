@@ -38,6 +38,7 @@ img{
 
 nav{
   background-color: rgb(0, 121, 173);
+  /* my future company color background-color: rgb(133, 206, 255); */
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -118,7 +119,9 @@ button{
   display: flex;
   align-items: flex-start;
   background-clip: padding-box;
+
   background-color: rgb(0, 121, 173);
+  /* my future company color background-color: rgb(133, 206, 255); */
   border-bottom-color: rgb(42, 95, 130);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
